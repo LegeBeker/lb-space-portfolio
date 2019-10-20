@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <link rel="stylesheet" type="text/css" href="../style.css">
+    <meta charset="utf-8">
+    <title>Volkan. - HTML</title>
+  </head>
+  <body>
+    <div class="sidebar">
+      <a href="../">HOME</a><br>
+      <a href="#begin">Begin</a><br>
+      <a href="#text">H1/2</a><br>
+      <a href="#text">p</a><br>
+      <a href="#text">ul</a><br>
+      <a href="#br">br</a><br>
+      <a href="#img">img</a><br>
+      <a href="#table">table</a><br>
+      <a href="#style">style</a><br>
+      <a href="#a">a</a><br>
+    </div>
+    <div class="area">
+    <div class="textarea" id="begin"><br>
+      <h2>Begin</h2>
+      Bij HTML begin je altijd met hetzelfde stukje tekst.
+      Kopieer dit om te beginnen:<br><br>
+        <div class="html-gebied">
+          &lt;!DOCTYPE html&gt;<br>
+          &lt;html lang="nl"&gt;<br>
+          &lt;head&gt;<br>
+          &emsp;&lt;meta charset="utf-8"&gt;<br>
+          &emsp;&lt;title&gt;&lt;/title&gt;<br>
+          &lt;/head&gt;<br>
+          &lt;body&gt;<br>
+          &lt;/body&gt;<br>
+          &lt;/html&gt;
+        </div><br>
+      Als je dit hebt gedaan, kun je verder door in de zijbalk te klikken op tag die je nodig hebt.
+    </div>
+    <div class="textarea" id="text"><br>
+      <h2>H1, H2, p en ul</h2>
+      Deze tags worden gebruikt voor het opmaken van tekst. &lt;h1&gt; en &lt;h2&gt; om de tekst groter te maken, &lt;p&gt; voor paragraven en &lt;ul&gt; voor een punt voor de zin. Probeer ze uit om te kijken wat ze doen.<br><br>
+      Hier enkele voorbeelden met hoe ze te gebruiken en wat ze doen:<br><br>
+        <div class="html-gebied">
+          &lt;h1&gt;Deze tekst wordt groot&lt;/h1&gt; <br>
+          &lt;h2&gt;Deze tekst wordt iets minder groot&lt;/h2&gt;<br>
+          &lt;p&gt;Dit wordt na meerdere keren gebruiken, paragraven&lt;/p&gt;<br>
+          &lt;ul&gt;Dit wordt een tekst met een punt ervoor&lt;/ul&gt;
+        </div><br>
+        <div class="html-gebied">
+          <h1>Deze tekst wordt groot</h1> <br>
+          <h2>Deze tekst wordt iets minder groot</h2><br>
+          <p>Dit wordt na meerdere keren gebruiken, paragraven</p><br>
+          <ul>Dit wordt een tekst met een punt ervoor</ul>
+        </div><br>
+    </div>
+    <div class="textarea" id="br"><br>
+      <h2>br</h2>
+      Dit is een tag die je vaak gebruikt. Dit voegt namelijk een enter toe in de tekst. &ltbr&gt; hoef je NOOIT te sluiten. Doe dit dus ook niet. Hier een voorbeeld met hoe het werkt:<br><br>
+        <div class="html-gebied">
+          Deze&lt;br&gt;tekst&lt;br&gt;staat onder&lt;br&gt;elkaar door&lt;br&gt;de brs.
+        </div><br>
+        <div class="html-gebied">
+          Deze<br>tekst<br>staat onder<br>elkaar door<br>de brs.
+        </div><br>
+    </div>
+    <div class="textarea" id="img"><br>
+      <h2>img</h2>
+      Als je een foto of gif wil toevoegen aan je website, gebruik je &lt;img&gt;. door &lt;width&gt; of &lt;height&gt; kun je de grote aanpassen. Hier een voorbeeld:<br><br>
+        <div class="html-gebied">
+          &lt;img src="(map met foto)/(naam).(extensie)" width="450px"/&gt;<br><br>
+          &lt;img src="Images/voorbeeldfoto.jpg" width="450px"/&gt;
+        </div><br>
+        <div class="html-gebied">
+          <img src="../Images/voorbeeldfoto.jpg" width="450px" />
+        </div><br>
+    </div>
+    <div class="textarea" id="table"><br>
+      <h2>table</h2>
+      &lt;table&gt; gebruik je om een tabel te maken. &lt;tr&gt; maakt nieuwe regels, en &lt;td&gt; nieuwe vakjes. Vergeet deze niet te sluiten! Hier een voorbeeld:<br><br>
+        <div class="html-gebied">
+          &lt;table border="1"&gt;<br>
+          &emsp;&lt;tr&gt;<br>
+          &emsp;&emsp;&lt;td&gt;linksboven&lt;/td&gt;&lt;td&gt;rechtsboven&lt;/td&gt;<br>
+          &emsp;&lt;/tr&gt;<br>
+          &emsp;&lt;tr&gt;<br>
+          &emsp;&emsp;&lt;td&gt;linksonder&lt;/td&gt;&lt;td&gt;rechtsonder&lt;/td&gt;<br>
+          &emsp;&lt;/tr&gt;<br>
+          &lt;/table&gt;<br>
+        </div><br>
+        <div class="html-gebied">
+          <table border="1">
+            <tr>
+              <td>linksboven</td><td>rechtsboven</td>
+            </tr>
+            <tr>
+              <td>linksonder</td><td>rechtsonder</td>
+            </tr>
+          </table>
+        </div><br>
+    </div>
+    <div class="textarea" id="style"><br>
+      <h2>style</h2>
+      &lt;style&gt; maakt websites mooi. Ze veranderen kleuren, fonts, grote, enz. Er zijn verschillende manieren om dit toe te voegen. Bijvoorbeeld in de &lt;head&gt;. Hier een voorbeeld.<br><br>
+        <div class="html-gebied">
+          &lt;head&gt;<br>
+          &emsp;&lt;meta charset="utf-8"&gt;<br>
+          &emsp;&lt;title&gt;&lt;/title&gt;<br>
+          &emsp;&lt;style&gt;<br>
+          &emsp;&emsp;body {<br>
+          &emsp;&emsp;background-color: #222222;<br>
+          &emsp;&emsp;font-family: arial;<br>
+          &emsp;&emsp;font-size: 16px;<br>
+          &emsp;&emsp;text-align: center;<br>
+          &emsp;&emsp;}<br>
+          &emsp;&emsp;.naam {<br>
+          &emsp;&emsp;color: green;<br>
+          &emsp;&emsp;font-family: fantasy;<br>
+          &emsp;&emsp;font-size: 30px;<br>
+          &emsp;&emsp;}<br>
+          &emsp;&lt;/style&gt;<br>
+          &lt;/head&gt;<br>
+          &lt;body&gt;<br>
+          &emsp;&lt;p class="naam"&gt;Volkan&lt;/p&gt;<br>
+          &lt;/body&gt;<br>
+        </div><br>
+        <div class="html-gebied">
+          <p style="color:green;font-family:fantasy;font-size:30px;">Volkan</p>
+        </div><br>
+    </div>
+    <div class="textarea" id="a"><br>
+      <h2>a</h2>
+      Wil je een link toevoegen naar een andere website of pagina? dat kan! dit doe je met &lt;a&gt;. Je kan dit op tekst, fotos(img), buttons enz. Als je target _blank toevoegd, opent de link in een nieuwe pagina. Hier een voorbeeld:<br><br>
+        <div class="html-gebied">
+          &lt;a href="google.com" target="_blank"&gt;Deze tekst opent google&lt;/a&gt;<br><br>
+          &lt;a href="test.html" target="_blank"&gt;Deze tekst opent een test pagina&lt;/a&gt;
+        </div><br>
+        <div class="html-gebied">
+          <a href="google.com" target="_blank">Deze tekst opent google</a><br><br>
+          <a href="test.html" target="_blank">Deze tekst opent een test pagina</a>
+        </div><br>
+      </div>
+    </div>
+  </body>
+  <footer class="footerback">Volkan Welp &copy; All Rights Reserved.&nbsp;&nbsp;</footer>
+</html>

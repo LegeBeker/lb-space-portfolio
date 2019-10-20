@@ -1,0 +1,184 @@
+* {
+  font-family: arial;
+}
+/* KAN WEG ALS ALLES GOED IS */
+html {
+  height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+a {
+  color: grey;
+}
+
+#logo {
+  background: var(--c-logo) no-repeat right center;
+  background-size: 400px;
+  width: 400px;
+  margin-top: 20px;
+  margin-left: 100px;
+  margin-right: auto;
+}
+
+.dark-mode {
+  background: var(--c-button) no-repeat right center;
+  float: right;
+  background-size: 40px;
+  width: 40px;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: 150px;
+}
+
+#web {
+    background: var(--c-slogan) no-repeat right center;
+    background-size: 350px;
+    width: 350px;
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin:0;
+  height: 50px;
+  padding: 10px;
+  margin-bottom: -10px;
+  margin-left: -10px;
+  margin-right: -8px;
+  background: linear-gradient(to bottom, #8061c2 , #382a54);
+  -webkit-text-fill-color: white;
+}
+
+.kop {
+  text-align: center;
+  font-size: 50px;
+  margin: 30px;
+  margin-bottom: 0px;
+  background: linear-gradient(to right, darkorange , violet);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  border-bottom: 3px solid var(--c-border);
+  width: 50%;
+  margin-left: 25%;
+}
+
+form {
+  text-align: center;
+}
+
+.img {
+  background: var(--c-logo) no-repeat right center;
+  background-size: 400px;
+  width: 400px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.img2 {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: : 10px;
+}
+
+.text2 {
+  font-size: 20px;
+  margin: 10px;
+  width: 60%;
+  margin-left: 20%;
+  margin-bottom: 25px;
+}
+
+.text3 {
+  display: run-in;
+  font-size: 20px;
+  margin-top: 10px;
+  margin-right: 25%;
+  text-align: right;
+}
+
+.nieuws {
+  box-shadow: 0px 0px 7px var(--c-shadow);
+  width: 150px;
+  height: 150px;
+  padding: 10px;
+  text-align: center;
+  margin: 15px;
+}
+
+.pakketen {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pakket {
+  box-shadow: 0px 0px 7px var(--c-shadow);
+  width: 250px;
+  height: 500px;
+  margin: 25px;
+}
+
+.pakketHead {
+  height: 100px;
+  line-height: 100px;
+  color: white;
+  font-size: 25px;
+  text-align: center;
+}
+
+.pakketBody {
+  height: 200px;
+  font-size: 15px;
+  text-align: left;
+  line-height: 2;
+  padding: 20px;
+}
+
+.pakketButton {
+  background: #222;
+  color: white;
+  border: none;
+  font-weight: bold;
+  font-size: 15px;
+  width: 75%;
+  margin-top: 70px;
+  margin-left: 12.5%;
+  text-align: center;
+  display: inline-block;
+  padding: 20px;
+}
+
+.pakketButton:hover {
+  background: grey;
+}
+
+@media screen and (max-width: 481px){
+  #logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  #web {
+    width: 0px;
+    position: absolute;
+  }
+  .pakketen {
+    display: inline-block;
+  }
+  .pakket {
+    width: 100%;
+    margin: 0px;
+    margin-top: 25px;
+  }
+}

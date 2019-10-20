@@ -1,0 +1,50 @@
+input[type=checkbox] {
+   position: absolute;
+   top: -9999px;
+   left: -9999px;
+}
+
+.grow {
+  flex-grow: 1;
+}
+
+:root {
+  --c-light-text: #333;
+  --c-light-background: #fff;
+  --c-light-border: lightgrey;
+  --c-light-shadow: lightgrey;
+  --c-light-logo: url(../Images/Logos/MainLogoTransparant2.png);
+  --c-light-slogan: url(../Images/Logos/slogan.png);
+  --c-light-button: url(../Images/Icons/moon.png);
+
+  --c-dark-text: #fff;
+  --c-dark-background: #333;
+  --c-dark-border: #454545;
+  --c-dark-shadow: #1f1f1f;
+  --c-dark-logo: url(../Images/Logos/MainLogoTransparant.png);
+  --c-dark-slogan: url(../Images/Logos/slogan2.png);
+  --c-dark-button: url(../Images/Icons/sun.png);
+}
+
+.theme-container {
+  --c-text: var(--c-light-text);
+  --c-background: var(--c-light-background);
+  --c-border: var(--c-light-border);
+  --c-shadow: var(--c-light-shadow);
+  --c-logo: var(--c-light-logo);
+  --c-slogan: var(--c-light-slogan);
+  --c-button: var(--c-light-button);
+
+  color: var(--c-text);
+  background-color: var(--c-background);
+}
+
+.dark-mode-checkbox:checked ~ .theme-container {
+  --c-text: var(--c-dark-text);
+  --c-background: var(--c-dark-background);
+  --c-border: var(--c-dark-border);
+  --c-shadow: var(--c-dark-shadow);
+  --c-logo: var(--c-dark-logo);
+  --c-slogan: var(--c-dark-slogan);
+  --c-button: var(--c-dark-button);
+}

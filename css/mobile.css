@@ -1,0 +1,95 @@
+@media only screen and (max-width: 768px) {
+  * {
+  }
+
+  html, body {
+    overflow-x: hidden;
+  }
+
+  #arrow {
+    display: none;
+  }
+
+  #midtext {
+    display: none;
+  }
+
+  .menu {
+    display: block;
+    float: right;
+    margin-right: -175px;
+  }
+
+  ul {
+    width: 40%;
+    text-align: center;
+  }
+
+  li {
+    width: 100%;
+  }
+
+  li a {
+    text-align: center;
+    display: block;
+    padding: 8px 30px;
+  }
+
+  .bodyframe {
+    margin: 2.5%;
+    margin-top: 0px;
+  }
+
+  .boxmenu {
+    display: block;
+  }
+
+  .menuitem {
+    width: 80%;
+    height: 300px;
+    line-height: 300px;
+    margin: 10%;
+  }
+
+  .art {
+    width: 100%;
+    margin: 0px;
+    margin-bottom: 10px;
+  }
+
+  .art:hover {
+    box-shadow: 0px 0px 0px;
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -o-transform: scale(1);
+    transform: scale(1);
+    transition: all 0.5s;
+    -webkit-transition: all 0.3s;
+  }
+
+  .pjtContainer {
+    margin-top: 0px;
+  }
+
+  .pjt {
+    box-shadow: 0px 0px 7px grey;
+    width: 97.5%;
+    height: 600px;
+    padding: 20px;
+    margin: 15px;
+    text-align: left;
+  }
+
+  .pjtText {
+    float: left;
+    color: #222;
+    width: 295px;
+    margin-bottom: 25px;
+  }
+
+  .image {
+    float: none;
+    margin-bottom: 0px;
+    height: 150px;
+  }
+}

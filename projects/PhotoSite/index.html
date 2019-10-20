@@ -1,0 +1,291 @@
+<html>
+  <head>
+    <title>LB's Portfolio</title>
+
+    <link rel="icon" type="image/png" href="Images/Logo/LogoB White.png"/>
+
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+    <script>
+      document.addEventListener('DOMContentLoaded', (event) => {
+      ((localStorage.getItem('mode') || 'dark') === 'dark') ? document.querySelector('body').classList.add('dark') : document.querySelector('body').classList.remove('dark')
+      })
+
+      function openNav() {
+        document.getElementById("myNav").style.width = "100%";
+      }
+
+      function closeNav() {
+        document.getElementById("myNav").style.width = "0%";
+      }
+    </script>
+
+    <style>
+      @font-face {
+        font-family: "Roboto Regular";
+        src: url(Roboto-Regular.ttf) format("truetype");
+      }
+
+      .text {
+        font-family: "Roboto Regular", Roboto;
+      }
+
+      .overlay {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: rgb(0,0,0);
+        background-color: rgba(0,0,0, 0.9);
+        overflow-x: hidden;
+        transition: 0.5s;
+      }
+
+      .overlay-content {
+        position: relative;
+        top: 25%;
+        width: 100%;
+        font-family: "Roboto Regular", Roboto;
+        color: #ffffff;
+        font-size: 30px;
+        text-align: center;
+        margin-top: 30px;
+      }
+
+      .overlay a {
+        padding: 8px;
+        font-family: "Roboto Regular", Roboto;
+        font-size: 36px;
+        color: #818181;
+        display: block;
+        transition: 0.3s;
+      }
+
+      .overlay a:hover, .overlay a:focus {
+        color: #f1f1f1;
+      }
+
+      .overlay .closebtn {
+        position: absolute;
+        top: 20px;
+        right: 45px;
+        font-size: 60px;
+      }
+
+      body {
+        background: #222222;
+      }
+
+      .dark {
+        background: #ffffff;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+			a {
+    		text-decoration: none;
+    		color: #ffffff;
+			}
+
+			img {
+				vertical-align: middle;
+        image-orientation: from-image;
+			}
+
+			ul {
+        box-shadow: 0px 15px 25px #111111;
+				z-: 15;
+ 				list-style-type: none;
+				font-family: "Roboto Regular", Roboto;
+				margin: 0;
+				position: fixed;
+				text-align: center;
+				bottom: 0;
+				left: 0;
+				padding: 0;
+				width: 100%;
+				overflow: hidden;
+				background-image: url("Images/Logo/Background2.png");
+			}
+
+			li {
+				float: left;
+        width: 100%;
+			}
+
+			li a {
+				display: block;
+				font-size: 15px;
+				color: white;
+				padding: 0px 14px;
+				text-decoration: none;
+				transition: 0.25s;
+			}
+
+			li a:hover {
+				background-color: #222222;
+			}
+
+      li a:active {
+				background-color: #222222;
+        opacity: 0;
+			}
+
+      br {
+        display: block;
+        margin: 4px 0;
+      }
+
+      .float{
+	       position:fixed;
+	        width:60px;
+	        height:60px;
+	        top:30px;
+	        right:30px;
+	        color:#FFF;
+          font-size: 30px;
+	        border-radius:50px;
+	        text-align: center;
+  				background-image: url("Images/Logo/Background2.png");
+        }
+
+        .my-float{
+	        margin-top:22px;
+        }
+
+      .b a {
+        padding: 16.2px 0px;
+      }
+
+      .row {
+        display: -ms-flexbox; /* IE10 */
+        display: flex;
+        -ms-flex-wrap: wrap; /* IE10 */
+        flex-wrap: wrap;
+        padding: 1px 1%;
+      }
+
+      .column {
+        -ms-flex: 25%; /* IE10 */
+        flex: 25%;
+        max-width: 25%;
+        padding: 10px 2px;
+      }
+
+      .column img {
+        margin-top: 4px;
+        vertical-align: middle;
+        width: 100%;
+      }
+
+      @media screen and (max-width: 1200px) {
+        .column {
+          -ms-flex: 33.33333%;
+          flex: 33.33333%;
+          max-width: 33.33333%;
+        }
+      }
+
+      @media screen and (max-width: 800px) {
+        .column {
+          -ms-flex: 50%;
+          flex: 50%;
+          max-width: 50%;
+        }
+      }
+
+      @media screen and (max-width: 600px) {
+        .column {
+          -ms-flex: 100%;
+          flex: 100%;
+          max-width: 100%;
+        }
+      }
+
+      @media screen and (max-width: 700px) and (max-height: 800px) {
+        .column {
+          -ms-flex: 100%;
+          flex: 100%;
+          max-width: 100%;
+        }
+      }
+
+    </style>
+
+  </head>
+
+  <body class="">
+
+    <div id="myNav" class="overlay">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <div class="overlay-content">
+        I'm getting in to photography and this website is a bundle of my proudest work.<br><br>
+        <a href="https://www.instagram.com/volkaneur" target="_blank">Instagram</a>
+        <a style="cursor: pointer" onclick="localStorage.setItem('mode', (localStorage.getItem('mode') || 'dark') === 'dark' ? 'bright' : 'dark'); localStorage.getItem('mode') === 'dark' ? document.querySelector('body').classList.add('dark') : document.querySelector('body').classList.remove('dark')" title="Switch to light or dark theme">Light/dark mode</a>
+        <br><br>© 2019 Volkan Welp All Rights Reserved.<br>
+        1.1.1
+      </div>
+    </div>
+
+    <a style="cursor:pointer" onclick="openNav()" class="float"><br>&#9776;</a>
+
+    <ul>
+      <li class="l"><img src="Images/Logo/LogoB White.png" height="50px" /></li>
+      <!-- <li class="b"><a style="cursor:pointer" onclick="openNav()">&#9776;</a></li> -->
+    </ul>
+
+    <!-- IMAGES -->
+
+    <div class="row">
+      <div class="column">
+        <img src="Images/Main/36.jpg" style="width:100%">
+        <img src="Images/Main/32.jpg" style="width:100%">
+        <img src="Images/Main/28.jpg" style="width:100%">
+        <img src="Images/Main/24.jpg" style="width:100%">
+        <img src="Images/Main/20.jpg" style="width:100%">
+        <img src="Images/Main/16.jpg" style="width:100%">
+        <img src="Images/Main/12.jpg" style="width:100%">
+        <img src="Images/Main/8.jpg" style="width:100%">
+        <img src="Images/Main/4.jpg" style="width:100%">
+      </div>
+      <div class="column">
+        <img src="Images/Main/35.jpg" style="width:100%">
+        <img src="Images/Main/31.jpg" style="width:100%">
+        <img src="Images/Main/27.jpg" style="width:100%">
+        <img src="Images/Main/23.jpg" style="width:100%">
+        <img src="Images/Main/19.jpg" style="width:100%">
+        <img src="Images/Main/15.jpg" style="width:100%">
+        <img src="Images/Main/11.jpg" style="width:100%">
+        <img src="Images/Main/7.jpg" style="width:100%">
+        <img src="Images/Main/3.jpg" style="width:100%">
+      </div>
+      <div class="column">
+        <img src="Images/Main/34.jpg" style="width:100%">
+        <img src="Images/Main/30.jpg" style="width:100%">
+        <img src="Images/Main/26.jpg" style="width:100%">
+        <img src="Images/Main/22.jpg" style="width:100%">
+        <img src="Images/Main/18.jpg" style="width:100%">
+        <img src="Images/Main/14.jpg" style="width:100%">
+        <img src="Images/Main/10.jpg" style="width:100%">
+        <img src="Images/Main/6.jpg" style="width:100%">
+        <img src="Images/Main/2.jpg" style="width:100%">
+      </div>
+      <div class="column">
+        <img src="Images/Main/33.jpg" style="width:100%">
+        <img src="Images/Main/29.jpg" style="width:100%">
+        <img src="Images/Main/25.jpg" style="width:100%">
+        <img src="Images/Main/21.jpg" style="width:100%">
+        <img src="Images/Main/17.jpg" style="width:100%">
+        <img src="Images/Main/13.jpg" style="width:100%">
+        <img src="Images/Main/9.jpg" style="width:100%">
+        <img src="Images/Main/5.jpg" style="width:100%">
+        <img src="Images/Main/1.jpg" style="width:100%">
+      </div>
+
+    </div>
+  </body>
+</html>

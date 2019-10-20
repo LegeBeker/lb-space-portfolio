@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="nl" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="css/default.css">
+  <link rel="stylesheet" type="text/css" href="css/slideshow.css">
+  <link rel="stylesheet" type="text/css" href="css/navbar.css">
+  <link rel="stylesheet" type="text/css" href="css/darkMode.css">
+
+  <script type="text/javascript" src="js/darkMode.js"></script>
+
+  <link rel="icon" href="Images/favicon.ico" type="image/x-icon" />
+  <link rel="shortcut icon" href="Images/favicon.ico" type="image/x-icon" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Home | WebWinkel</title>
+</head>
+
+<body>
+  <header></header>
+  <input class="dark-mode-checkbox" id="dark-mode" type="checkbox" />
+  <div class="theme-container grow">
+    <div class="header">
+      <img id="logo" src="Images/Logos/trans.png" onclick="myFunction()" role="button" tabIndex="0" alt="Webwinkel" height="100px" />
+      <script type="text/javascript" src="js/logopress.js"></script>
+      <img id="web" src="Images/Logos/trans.png" alt="Webwinkel" height="100px" />
+      <label for="dark-mode"><img class="dark-mode" src="Images/Logos/trans.png" height="100px" /></label>
+      <ul>
+        <li><a href="pakketten/index.html">Prijzen & Pakketten</a></li>
+        <li class="dropdown"><a href="projecten.html">Afgeronde Projecten</a>
+          <div class="dropdown-content">
+            <a href="projecten.html#heden">2018 - Heden</a>
+            <a href="projecten.html#verleden">2014 - 2018</a>
+          </div>
+        </li>
+        <li><a href="nieuws/index.html">Nieuws</a></li>
+        <li class="dropdown"><a href="over-ons/index.html" class="dropbtn">Over Ons</a>
+          <div class="dropdown-content">
+            <a href="over-ons/team.html">Het Team</a>
+            <a href="over-ons/werkplek.html">De Werkplek</a>
+          </div>
+        </li>
+        <li><a href="vacatures.html">Vacatures</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+    <div class="slideshow">
+      <div class="mySlides fade">
+        <img src="Images/ad1.png" alt="Krijg de website die u wenst." width="100%" />
+      </div>
+      <div class="mySlides fade">
+        <img src="Images/ad2.png" alt="Super Snelle Service" width="100%" />
+      </div>
+      <div class="mySlides fade">
+        <img src="Images/ad3.png" alt="Website in enkele weken..." width="100%" />
+      </div>
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+      </div>
+    </div>
+    <script type="text/javascript" src="js/slideshow.js"></script>
+    <div class="text2">
+      <p>Hi! Wij zijn WebWinkel, en specializeren ons in het maken van uw websites! Hier onder ziet u de pakketten die wij aanbieden en
+        het laatste nieuws over ons bedrijf. Verder kunt u rond kijken naar afgeronde projecten en kijken met wie u te maken heeft als u met ons verder gaat.
+        Als u verder nog vragen heeft of onduidelijkheden, neem dan contact met ons op via het tabblad 'Contact'.</p>
+    </div>
+    <div class="pakketen">
+      <div class="pakket" style="float:left;">
+        <div class="pakketHead" style="background:linear-gradient(to right, darkorange , violet)">
+          Basis-pakket
+        </div>
+        <div class="pakketBody">
+          - Sitemap<br>- Ontwerp van website<br>- Bouwen van website<br>- Infosites<br>- Support via mail
+        </div>
+        <a href="pakketten/basis.html" target="_blank"><button class="pakketButton" type="button">Bestellen</button></a>
+      </div>
+      <div class="pakket" style="float:left;">
+        <div class="pakketHead" style="background:linear-gradient(to right, violet , darkviolet)">
+          Standaard-pakket
+        </div>
+        <div class="pakketBody">
+          - Sitemap<br>- Ontwerp van website<br>- Bouwen van website<br>- Info & organizatie sites<br>- Meedenken tijdens proces<br>- Support via mail
+        </div>
+        <a href="pakketten/standaard.html" target="_blank"><button class="pakketButton" type="button">Bestellen</button></a>
+      </div>
+      <div class="pakket" style="float:left;">
+        <div class="pakketHead" style="background:linear-gradient(to right, darkviolet , #382a54)">
+          Pro-pakket
+        </div>
+        <div class="pakketBody">
+          - Sitemap<br>- Ontwerp van website<br>- Bouwen van website<br>- Info, organizatie & webshops<br>- Hosting vanuit ons<br>- Meedenken tijdens proces<br>- Support via telefoon & mail
+        </div>
+        <a href="pakketten/pro.html" target="_blank"><button class="pakketButton" type="button">Bestellen</button></a>
+      </div>
+    </div>
+    <div class="kop">Nieuws</div>
+    <div class="pakketen">
+      <div class="nieuws">-</div>
+      <div class="nieuws">-</div>
+      <div class="nieuws">-</div>
+      <div class="nieuws">-</div>
+    </div>
+    <div class="pakketen">
+      <div class="nieuws">-</div>
+      <div class="nieuws">-</div>
+      <div class="nieuws">-</div>
+      <div class="nieuws">1-10-2019<br><b>Wij zijn begonnen!</b><br><span style="font-size:15px;">Wij zijn begonnen aan het maken van sites! We hebben al ervaring, maar...</span><br><br><a href="nieuws/01-10-2019.html">Lees meer &#8594;</a></div>
+    </div>
+    <div class="kop"></div>
+  </div>
+</body>
+<footer>
+  <div class="footer">
+    &copy; Volkan Welp. Alle rechten voorbehouden.
+  </div>
+</footer>
+
+</html>
