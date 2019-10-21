@@ -93,3 +93,27 @@
     height: 150px;
   }
 }
+
+@media only screen and (max-width: 1800px) and (min-width: 768px) {
+  #heading {
+  margin-top: -100px;
+  margin-left: -200px;
+  }
+
+  .menuitem {
+    width: 300px;
+    height: 300px;
+    line-height: 300px;
+  }
+
+
+  #arrow {
+    margin-top: 700px;
+  }
+
+  #hoverArt, #hoverProjects, #hoverPhotos {
+    font-size: 10px;
+    height: 50px;
+    line-height: 50px;
+  }
+}
